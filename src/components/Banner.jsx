@@ -349,13 +349,13 @@ const Banner = () => {
                     <div className="flex justify-center">
                       <a
                         href={proj.github}
-                        className="inline-block border text-black px-4 py-2 rounded hover:bg-purple-900 hover:text-white transition"
+                        className="inline-block border text-black px-4 py-2 rounded text-xl font-bold hover:bg-purple-900 hover:text-white transition"
                       >
-                        View On GitHub
+                         GitHub
                       </a>
                       <a
                         href={proj.livedemo}
-                        className="inline-block bg-purple-950 ml-10 text-white px-4 py-2 rounded hover:bg-purple-900"
+                        className="inline-block bg-purple-950 ml-10 text-white px-4 py-2 rounded text-xl font-bold hover:bg-purple-900"
                       >
                         Live Demo
                       </a>
@@ -440,7 +440,7 @@ const Banner = () => {
         </section>
       </div>
 
-      {/* Footer / Contact */}
+      {/* Contact */}
       <ContactUs />
     </div>
   );
