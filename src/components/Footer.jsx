@@ -7,7 +7,7 @@ import {FaGithub,
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-blue-950 text-gray-400 py-6">
+    <footer className="bg-gradient-to-tl from-[#030637] via-[#3c0753] to-[#720455] w-full py-6 text-white">
       <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
         
         {/* Credit Text Side-by-Side */}
