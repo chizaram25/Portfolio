@@ -133,11 +133,11 @@ const Faq = () => {
             className="inline-flex items-center justify-center px-6 py-3 bg-purple-950 text-white rounded-lg shadow-sm transition transform duration-200 ease-in-out hover:bg-purple-900 hover:-translate-y-0.5 focus:outline-none"
             
           >
-            Contact me
+            Contact Us
           </a>
           <Link
             to="/project"
-            className="inline-flex items-center justify-center px-6 py-3 bg-transparent text-blue-600 border border-blue-600 rounded-lg transition-colors duration-200 hover:bg-blue-50"
+            className="inline-flex items-center justify-center px-6 py-3 bg-transparent text-blue-600 border border-blue-600 rounded-lg transition-colors duration-200 hover:bg-purple-950 hover:text-white focus:outline-none"
           >
             View projects
           </Link>

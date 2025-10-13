@@ -33,7 +33,7 @@ const projects = [
       "UniTrack is a comprehensive, GPS-verified attendance management system designed specifically for educational institutions. Built with modern web technologies, it provides real-time attendance tracking, location verification, device fingerprinting, and comprehensive reporting features.",
     skillset: "Nextjs, Tailwindcss, Typescript, Nodejs, Express, MongoDB",
     image: Screenshot5,
-    github: "#",
+    github: "https://github.com/chizaram25/UniTrack.git",
     livedemo: "https://uni-track-l0902du9o-chizaram-obis-projects.vercel.app",
   },
 ];
@@ -72,7 +72,7 @@ const PortfolioSection = () => {
       {/* Projects Section */}
       <main className="flex-1 px-12 py-20">
         <h1
-          className="text-4xl font-bold text-center text-yellow-300 mb-12"
+          className="text-5xl font-bold text-center text-yellow-300 mb-12"
           data-aos="fade-down"
         >
           Projects
@@ -102,13 +102,13 @@ const PortfolioSection = () => {
                 <div className="flex justify-center">
                   <a
                     href={proj.github}
-                    className="inline-block border text-black px-4 py-2 rounded hover:bg-purple-900 hover:text-white transition"
+                    className="inline-block border text-black px-4 py-2 rounded text-xl font-bold hover:bg-purple-900 hover:text-white transition"
                   >
                     GitHub
                   </a>
                   <a
                     href={proj.livedemo}
-                    className="inline-block bg-purple-950 ml-4 text-white px-4 py-2 rounded hover:bg-purple-900 transition"
+                    className="inline-block bg-purple-950 ml-4 text-white px-4 py-2 rounded text-xl font-bold hover:bg-purple-900 transition"
                   >
                     Live Demo
                   </a>
@@ -121,10 +121,10 @@ const PortfolioSection = () => {
         {/* Testimonials Section */}
         <section className="w-full py-20 px-8 md:px-16 flex flex-col items-center justify-center">
           <h2
-            className="text-4xl font-bold text-center text-yellow-400 mb-12"
+            className="text-5xl font-bold text-center text-yellow-400 mb-12"
             data-aos="fade-down"
           >
-            What Clients Say
+            Testimonials
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center place-items-center max-w-6xl w-full">

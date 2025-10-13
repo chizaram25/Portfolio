@@ -43,7 +43,7 @@ const ContactUs = () => {
         />
       </div>
       <div className="mx-auto max-w-2xl text-center" data-aos="fade-right">
-        <h2 className="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">Contact Me</h2>
+        <h2 className="text-6xl font-extrabold tracking-tight text-balance text-yellow-400 sm:text-5xl">Contact Us</h2>
       </div>
       <form 
         action="https://formspree.io/f/mvgblrqw" 
@@ -52,7 +52,7 @@ const ContactUs = () => {
         onSubmit={handleSubmit}> 
   <div className="grid grid-cols-1 gap-x-8 gap-y-6 w-full">
     <div>
-      <label htmlFor="name" className="text-sm/6 font-semibold text-white" data-aos="fade-left">
+      <label htmlFor="name" className="text-sm/6 font-semibold text-yellow-400" data-aos="fade-left">
         Name
       </label>
       <input
@@ -61,13 +61,13 @@ const ContactUs = () => {
         type="text"
         autoComplete="given-name"
         required
-        className="w-full mt-2.5 rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
+        className="w-full mt-2.5 rounded-md bg-white/5 px-3.5 py-2 text-base text-yellow-400 outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
         data-aos="fade-right"
       />
     </div>
 
     <div className="sm:col-span-2">
-      <label htmlFor="email" className="block text-sm/6 font-semibold text-white" data-aos="fade-left">
+      <label htmlFor="email" className="block text-sm/6 font-semibold text-yellow-400" data-aos="fade-left">
         Email
       </label>
       <div className="mt-2.5">
@@ -77,14 +77,14 @@ const ContactUs = () => {
           type="email"
           autoComplete="email"
           required
-          className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
+          className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-yellow-400 outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
           data-aos="fade-right"
         />
       </div>
     </div>
 
     <div className="sm:col-span-2">
-      <label htmlFor="message" className="block text-sm/6 font-semibold text-white" data-aos="fade-left">
+      <label htmlFor="message" className="block text-sm/6 font-semibold text-yellow-400" data-aos="fade-left">
         Message
       </label>
       <div className="mt-2.5">
@@ -103,7 +103,7 @@ const ContactUs = () => {
   <div className="mt-10" data-aos="fade-left">
     <button
       type="submit"
-      className="block w-full rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+      className="block w-full rounded-md bg-purple-900 px-3.5 py-2.5 text-center text-sm font-semibold text-yellow-white shadow-xs hover:bg-purple-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
     >
       Submit
     </button>

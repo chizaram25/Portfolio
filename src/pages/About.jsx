@@ -75,7 +75,7 @@ const About = () => {
             className="w-full md:w-1/2 flex flex-col items-center md:items-start"
             data-aos="fade-right"
           >
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold mb-6 text-center md:text-left">
+            <h1 className="text-5xl sm:text-4xl md:text-6xl font-extrabold mb-6 text-center md:text-left">
               About Me
             </h1>
 
