@@ -1,29 +1,64 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const closeMenu = () => setIsOpen(false);
 
+  // Common link styles
+  const baseClasses = "transition-colors hover:text-yellow-300";
+
   return (
     <nav className="fixed top-0 left-0 w-full backdrop-blur-md bg-white/10 text-white shadow-md z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo or Brand Name */}
-        <Link to="/" className="text-2xl font-bold text-yellow-300">
+        <NavLink to="/" className="text-2xl font-bold text-yellow-300" onClick={closeMenu}>
           ZHEECODES
-        </Link>
+        </NavLink>
 
         {/* Desktop Nav Links */}
         <div className="hidden md:flex space-x-6 text-lg">
-          <Link to="/" className="hover:text-yellow-300 transition-colors">Home</Link>
-          <Link to="/project" className="hover:text-yellow-300 transition-colors">Project</Link>
-          <Link to="/about" className="hover:text-yellow-300 transition-colors">About</Link>
-          <Link to="/resume" className="hover:text-yellow-300 transition-colors">Resume</Link>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `${baseClasses} ${isActive ? "text-yellow-300 font-semibold" : ""}`
+            }
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/project"
+            className={({ isActive }) =>
+              `${baseClasses} ${isActive ? "text-yellow-300 font-semibold" : ""}`
+            }
+          >
+            Project
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              `${baseClasses} ${isActive ? "text-yellow-300 font-semibold" : ""}`
+            }
+          >
+            About
+          </NavLink>
+          <NavLink
+            to="/resume"
+            className={({ isActive }) =>
+              `${baseClasses} ${isActive ? "text-yellow-300 font-semibold" : ""}`
+            }
+          >
+            Resume
+          </NavLink>
         </div>
 
         {/* Mobile Menu Icon */}
         <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle navigation menu" aria-expanded={isOpen}>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle navigation menu"
+            aria-expanded={isOpen}
+          >
             <svg
               className="w-6 h-6 text-white"
               fill="none"
@@ -41,10 +76,42 @@ const Nav = () => {
       {isOpen && (
         <div className="md:hidden bg-white/10 backdrop-blur-md px-6 pb-4">
           <div className="flex flex-col space-y-4 text-lg">
-            <Link to="/" className="hover:text-yellow-300" onClick={closeMenu}>Home</Link>
-            <Link to="/project" className="hover:text-yellow-300" onClick={closeMenu}>Project</Link>
-            <Link to="/about" className="hover:text-yellow-300" onClick={closeMenu}>About</Link>
-            <Link to="/resume" className="hover:text-yellow-300" onClick={closeMenu}>Resume</Link>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                `${baseClasses} ${isActive ? "text-yellow-300 font-semibold" : ""}`
+              }
+              onClick={closeMenu}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="/project"
+              className={({ isActive }) =>
+                `${baseClasses} ${isActive ? "text-yellow-300 font-semibold" : ""}`
+              }
+              onClick={closeMenu}
+            >
+              Project
+            </NavLink>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                `${baseClasses} ${isActive ? "text-yellow-300 font-semibold" : ""}`
+              }
+              onClick={closeMenu}
+            >
+              About
+            </NavLink>
+            <NavLink
+              to="/resume"
+              className={({ isActive }) =>
+                `${baseClasses} ${isActive ? "text-yellow-300 font-semibold" : ""}`
+              }
+              onClick={closeMenu}
+            >
+              Resume
+            </NavLink>
           </div>
         </div>
       )}
