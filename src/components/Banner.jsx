@@ -68,7 +68,7 @@ const Banner = () => {
   const [flipped, setFlipped] = useState(false);
   const [isNearFooter, setIsNearFooter] = useState(false);
 
-  // 👇 Hide icons when scrolling down
+  //  Hide icons when scrolling down
   useEffect(() => {
     let lastScrollY = window.scrollY;
 
@@ -88,9 +88,10 @@ const Banner = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // 👇 Detect when footer (ContactUs) is visible on mobile
+  //  Detect when footer is visible on mobile
   useEffect(() => {
-    if (window.innerWidth >= 768) return; // Only run on mobile
+    // Only run on mobile
+    if (window.innerWidth >= 768) return; 
 
     const footer =
       document.querySelector("footer") ||
@@ -103,7 +104,8 @@ const Banner = () => {
       },
       {
         root: null,
-        rootMargin: "150px", // starts fading out before footer fully appears
+        // starts fading out before footer fully appears
+        rootMargin: "150px", 
         threshold: 0.1,
       }
     );
@@ -205,21 +207,43 @@ const Banner = () => {
             <p className="text-white text-5xl md:text-6xl font-bold">
               I'm <span className="text-yellow-300">Chizaram</span>
             </p>
-            <p className="text-yellow-300 text-3xl md:text-4xl font-extrabold pt-2">
-              <Typewriter
-                words={[
-                  "FREELANCER",
-                  "MERN STACK DEVELOPER",
-                  "FULL-STACK DEVELOPER",
-                ]}
-                loop
-                cursor
-                cursorStyle="|"
-                typeSpeed={70}
-                deleteSpeed={50}
-                delaySpeed={1000}
-              />
-            </p>
+             <p className="text-yellow-300 text-3xl md:text-4xl font-extrabold pt-2">
+        <Typewriter
+          words={[
+            "Full-Stack Developer",
+            "React.js • Next.js • Node.js • MongoDB",
+          ]}
+          loop
+          cursor
+          cursorStyle="|"
+          typeSpeed={70}
+          deleteSpeed={50}
+          delaySpeed={1000}
+        />
+      </p>
+
+      {/* Value Statement */}
+      <p className="text-gray-300 mt-4 leading-relaxed max-w-lg">
+        I build high-performing, user-focused web applications that improve
+        digital experiences, optimize performance, and support business growth.  
+        Available for <span className="text-yellow-400 font-medium">full-time roles</span> & <span className="text-yellow-400 font-medium">freelance projects</span>.
+      </p>
+
+      {/* CTA Buttons */}
+      <div className="flex flex-col sm:flex-row items-center gap-4 mt-6 justify-center md:justify-start">
+        <Link
+          to="/project"
+          className="px-6 py-3 bg-yellow-400 text-black font-semibold rounded-full shadow-lg hover:bg-yellow-300 transition-all duration-300"
+        >
+          View My Work
+        </Link>
+        <Link
+          to="/resume"
+          className="px-6 py-3 border-2 border-yellow-400 text-yellow-400 font-semibold rounded-full hover:bg-yellow-400 hover:text-black transition-all duration-300"
+        >
+          View my resume
+        </Link>
+      </div>
           </div>
 
           {/* Right Flipping Image */}
